@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Manager</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav>
+        <div class=".logo">P-Manager</div>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="hero">
+        <header>
+            <h1>Welcome to P-Manager</h1>
+            <p>Your Trusted Password Manager</p>
+        </header>
+
+        <main>
+            <section class="features">
+                <div class="feature">
+                    <i class="fas fa-lock"></i>
+                    <h2>Secure Storage</h2>
+                    <p>Your passwords are safe and encrypted.</p>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-key"></i>
+                    <h2>Easy Access</h2>
+                    <p>Access your passwords anytime, anywhere.</p>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-shield-alt"></i>
+                    <h2>Strong Protection</h2>
+                    <p>Protect your data with top-notch security.</p>
+                </div>
+            </section>
+
+        </main>
+    </div>
+
+
+    <div class="container">
+
+        <div>
+            <h2>Add a Password</h2>
+            <form action="">
+                <label for="website">Website</label>
+                <input id="website" placeholder="Enter your website name" type="text" name="website" required>
+                <label for="username">Username</label>
+                <input id="username" placeholder="Enter your username name" type="text" name="Username" required>
+                <label for="password">Password</label>
+                <input id="password" placeholder="Enter your password" type="password" name="password" required>
+                <button id="btn" type="submit">Submit</button>
+            </form>
+        </div>
+
+        <div id="saved-table">
+            <h1>Saved Passwords</h1>
+            <table>
+                <tr>
+                    <th>Website</th>
+                    <th>Username</th>
+                    <th>Password</th>
+                    <th>Delete</th>
+                </tr>
+                <tr>
+                    <td>Github</td>
+                    <td>mohitsaini07</td>
+                    <td>3423423</td>
+                    <td>delete</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 P-Manager. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

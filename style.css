@@ -1,0 +1,223 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 80px;
+  padding: 0 30px;
+  background-color: #0078d4;
+  color: #fff;
+}
+ul {
+  display: flex;
+}
+ul li {
+  list-style: none;
+  font-size: 0.9rem;
+  margin: 0 10px;
+  text-transform: uppercase;
+}
+li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Basic styling for the homepage */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+header {
+  text-align: center;
+  padding: 40px 0;
+}
+header h1 {
+  font-size: 2.5rem;
+}
+main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+.features {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+.feature {
+  margin: 0 10px;
+  text-align: center;
+}
+.feature i {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #0078d4;
+}
+.btn {
+  display: inline-block;
+  margin: 10px;
+  padding: 10px 20px;
+  text-decoration: none;
+  background-color: #0078d4;
+  color: #fff;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+.btn:hover {
+  background-color: #005a9e;
+}
+
+footer {
+  text-align: center;
+  padding: 20px 0;
+  background-color: #3986b9;
+  color: #fff;
+}
+
+/* Password Form  */
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 100%;
+}
+.container h1 {
+  text-align: center;
+  font-size: 1.4rem;
+  background-color: rgb(16, 53, 63);
+  color: white;
+  font-weight: 500;
+  text-transform: uppercase;
+  border-bottom: 1px solid #fff;
+}
+div h2 {
+  font-size: 1.3rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+table {
+  border-collapse: collapse;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+}
+table th {
+  background-color: rgb(16, 53, 63);
+  color: #fff;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+table,
+tr,
+th,
+td {
+  padding: 10px;
+  text-align: center;
+}
+form {
+  display: flex;
+  gap: 5px;
+  width: 300px;
+  flex-direction: column;
+  border: 1px solid #000;
+  padding: 20px;
+}
+form label {
+  font-size: 0.9rem;
+}
+form input {
+  padding: 5px 10px;
+}
+form #btn {
+  padding: 5px 10px;
+  text-transform: uppercase;
+  background-color: rgb(45, 73, 95);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+}
+form #btn:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+#deleteBtn {
+  border: none;
+  background-color: #fff;
+}
+
+i {
+  color: red;
+}
+i:hover {
+  cursor: pointer;
+}
+/* Initially hide the password text */
+.password-text {
+  display: none;
+  font-weight: bold;
+}
+
+/* Style the eye button */
+#eyeBtn {
+  cursor: pointer;
+  font-size: 18px;
+}
+
+footer {
+  text-align: center;
+  padding: 20px 0;
+  background-color: #333;
+  color: #fff;
+}
+
+@media screen and (max-width: 530px) {
+  header h1 {
+    font-size: 1.3rem;
+  }
+  header p {
+    font-size: 0.9rem;
+  }
+  .features {
+    padding: 0 2rem;
+  }
+  .feature i {
+    font-size: 1.5rem;
+  }
+  .feature h2 {
+    font-size: 0.9rem;
+  }
+  .feature p {
+    font-size: 0.8rem;
+  }
+  .container {
+    flex-direction: column;
+    justify-content: start;
+    gap: 10px;
+  }
+  .notifications {
+    width: 95%;
+  }
+  .notifications .toast {
+    width: 100%;
+    font-size: 1rem;
+    margin-left: 20px;
+  }
+  .buttons .btn {
+    margin: 0 1px;
+    font-size: 1.1rem;
+    padding: 8px 15px;
+  }
+}
